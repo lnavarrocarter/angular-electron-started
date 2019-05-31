@@ -27,6 +27,6 @@ Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cl
 Ejecute `ng serve` para un servidor dev. Vaya a `http://localhost:4200/`. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos de origen.
 
 
-## Proyecto Development Electron Electron
+## Proyecto de desarrollo Electron Electron
 
 Ejecute `npm run electron` para una ventana al escritorio. La aplicación no se volverá a cargar automáticamente si cambia alguno de los archivos de origen, por lo que volverá a ejecutar el comando. Es recomendable ejecutar `ng server` para una prueba.
