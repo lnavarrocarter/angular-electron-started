@@ -1,27 +1,32 @@
-# PtoVenta
+# Angular7 Electron Started
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
 
-## Development server
+## Getting Started 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2 && [Electron Js](https://electronjs.org/) version 4.0.2
+
+donwload to repository
+`git clone https://github.com/lnavarrocarter/angular-electron-started`
+get libraries `npm i -D`
+
+## Development server Angular project
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development Server Electron project
+Run `npm run electron` for a windows to desktop. The app will not automatically reload if you change any of the source files,so will execute the comand again. it's recomendable execute `ng server` for a testings
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# SPANISH
 
-## Running unit tests
+## Empezando
+Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 7.3.2 && [Electron Js](https://electronjs.org/) versión 4.0.2
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Proyecto de desarrollo de servidor angular
 
-## Running end-to-end tests
+Ejecute `ng serve` para un servidor dev. Vaya a `http://localhost:4200/`. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos de origen.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Proyecto Development Electron Electron
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Ejecute `npm run electron` para una ventana al escritorio. La aplicación no se volverá a cargar automáticamente si cambia alguno de los archivos de origen, por lo que volverá a ejecutar el comando. Es recomendable ejecutar `ng server` para una prueba.
