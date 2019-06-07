@@ -7,6 +7,8 @@ import { RouterModule, Route } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { NotFoundComponent } from './views/errors/not-found/not-found.component';
 import { Dashboard1Component } from './views/dashboards/dashboard1/dashboard1.component';
+import { PuntoventaComponent } from './views/puntoventa/puntoventa.component';
+import { NumbersComponent } from './views/puntoventa/numbers/numbers.component';
 
 
 const routes: Route[] = [
@@ -14,6 +16,8 @@ const routes: Route[] = [
   { path: 'dashboards', children:
     [
       { path: 'v1', component: Dashboard1Component },
+      { path: 'caja', component: PuntoventaComponent },
+      { path: 'numbers', component : NumbersComponent }
     ]
   },
   { path: 'profiles', children:

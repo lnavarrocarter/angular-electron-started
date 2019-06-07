@@ -1,0 +1,27 @@
+<div class="numbers">
+  <div class="visual">
+    <input type="text" [(ngModel)]="NumberInput" class="input-number" name="number">
+  </div>
+  <div class="digitos">
+    <div class="">
+        <button class="btn btn-digits" (tap)="Inumber(7)">7</button>
+        <button class="btn btn-digits" (tap)="Inumber(8)">8</button>
+        <button class="btn btn-digits" (tap)="Inumber(9)">9</button>
+    </div>
+    <div class="">
+        <button class="btn btn-digits" (tap)="Inumber(4)">4</button>
+        <button class="btn btn-digits" (tap)="Inumber(5)">5</button>
+        <button class="btn btn-digits" (tap)="Inumber(6)">6</button>
+    </div>
+    <div class="">
+        <button class="btn btn-digits" (tap)="Inumber(1)">1</button>
+        <button class="btn btn-digits" (tap)="Inumber(2)">2</button>
+        <button class="btn btn-digits" (tap)="Inumber(3)">3</button>
+    </div>
+    <div class="">
+        <button class="btn btn-digits" >*</button>
+        <button class="btn btn-digits" (tap)="Inumber(0)">0</button>
+        <button class="btn btn-digits" >┴</button>
+    </div>
+  </div>
+</div>
