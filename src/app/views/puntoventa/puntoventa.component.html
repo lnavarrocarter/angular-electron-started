@@ -1,13 +1,66 @@
 <!--Grid row-->
-<div class="row wow fadeIn mt-2">
+<div class="row wow fadeIn mt-1">
   <!--Grid column-->
-  <div class="col-md-3 mb-2">
+  <div class="col-md-6 mb-1">
     <!--Card-->
-    <div class="card">
+    <div class="card price-list">
       <!--Card content-->
       <div class="card-body">
-        <app-numbers></app-numbers>
+        <!-- Table with panel -->
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col w-50">Nombre</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of items">
+                <th scope="row">{{ index }}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.cant }}</td>
+                <td>{{item.price * item.cant}}</td>
+              </tr>
+            </tbody>
+        </table>
       </div>
+    </div>
+  </div>
+  <div class="col-md-6 mb-1">
+      <!--Card-->
+      <div class="card">
+        <!--Card content-->
+        <div class="row card-body">
+          <div class="col-sm-6 text-left red-text">
+            <p>Ncai Spa. Empresa que entrega este software gratuito.</p>
+          </div>
+          <div class="col-sm-6 text-right grey-text">
+            <dl class="row">
+                <dt class="col-md-5">SUBTOTAL</dt>
+                <dd class="col-md-7">$ {{ total }}</dd>
+                <dt class="col-md-5">IVA</dt>
+                <dd class="col-md-7">$ {{ total * 0.19}}</dd>
+                <dt class="col-md-5">TOTAL</dt>
+                <dd class="col-md-7">$ {{ (total * 0.19) + total }}</dd>
+            </dl>
+          </div>
+          <!-- Table with panel -->
+        </div>
+    </div>
+    <div class="card mt-2">
+        <!--Card content-->
+        <div class="row card-body">
+          <div class="md-form input-group mb-3">
+            <input type="text" class="form-control" placeholder="Código/Nombre" aria-label="Código/Nombre"
+              aria-describedby="MaterialButton-Code">
+            <div class="input-group-append">
+              <button class="btn btn-md btn-secondary m-0 px-3" (tap)="productAgree()" type="button" id="MaterialButton-Code">Ok ↲</button>
+            </div>
+          </div>
+          <!-- Table with panel -->
+        </div>
     </div>
   </div>
   <!--Grid column-->

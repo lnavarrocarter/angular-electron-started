@@ -13,8 +13,10 @@ export class NavigationComponent implements OnInit {
   clock: string;
   datenow: string;
   meses: any = ['ENE', 'FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEPT', 'OCT', 'NOV', 'DIC'];
+  profile: any ;
 
   constructor() {
+    this.profile = { fullname :  "Luis Navarro Carter", ocupation: "Vendedor" };
     this.clicked = this.clicked === undefined ? false : true;
     setInterval(() => {
       this.clock = this.getTimerHour();

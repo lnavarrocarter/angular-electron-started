@@ -18,7 +18,6 @@ import { Dashboard1Component } from './dashboards/dashboard1/dashboard1.componen
 import { Profile1Component } from './profile/profile1/profile1.component';
 import { HelpComponent } from './help/help.component';
 import { PuntoventaComponent } from './puntoventa/puntoventa.component';
-import { NumbersComponent } from './puntoventa/numbers/numbers.component';
 
 
 @NgModule({
@@ -45,8 +44,6 @@ import { NumbersComponent } from './puntoventa/numbers/numbers.component';
     Profile1Component,
     HelpComponent,
     PuntoventaComponent,
-    NumbersComponent,
-
   ],
   exports: [
     FooterComponent,

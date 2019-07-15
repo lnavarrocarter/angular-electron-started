@@ -7,7 +7,7 @@
         <!-- Navbar brand -->
         <logo class="ml-3">
             <a class="navbar-brand" href="">
-                <strong class="blue-text">PTO</strong>
+                <strong class="red-text">WalletMarket</strong>
             </a>
         </logo>
 
@@ -16,8 +16,8 @@
 
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank" mdbWavesEffect>#</a>
+                <li class="nav-link">
+                  {{ profile.fullname }} <span class="text-bold blue-text">{{ profile.ocupation }}</span>
                 </li>
             </ul>
             <!-- Links -->
@@ -25,18 +25,22 @@
             <!-- Search form -->
             <ul class="navbar-nav nav-flex-icons">
                     <li class="nav-item">
-                            {{ datenow }}
-                        <h4>{{ clock }}</h4>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" target="_blank" mdbWavesEffect>
+                        <a href="#" class="nav-link" target="_blank" mdbWavesEffect mdbTooltip="Balance" placement="bottom">
                             <mdb-icon fas icon="wallet"></mdb-icon>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" target="_blank" mdbWavesEffect>
+                        <a href="#" class="nav-link" target="_blank" mdbWavesEffect mdbTooltip="Ayuda" placement="bottom">
                             <mdb-icon fas icon="question"></mdb-icon>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" target="_blank" mdbWavesEffect mdbTooltip="Logout" placement="bottom">
+                            <mdb-icon fas icon="power-off"></mdb-icon>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        {{ datenow }}  {{ clock }}
                     </li>
                 </ul>
         </links>
