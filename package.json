@@ -62,7 +62,7 @@
     "angular-bootstrap-md": "7.5.0",
     "angular-calendar": "^0.27.8",
     "bower": "^1.8.8",
-    "chart.js": "^2.5.0",
+    "chart.js": "^2.9.4",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "date-fns": "^1.30.1",
